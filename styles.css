@@ -1,0 +1,30 @@
+.timer {
+  display: flex;
+  font-size: 78px;
+}
+
+.field {
+  position: relative;
+}
+
+.field:not(:last-child)::after {
+  content: ":";
+  position: absolute;
+  right: -10px;
+  bottom: 6px;
+}
+
+.value {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.label {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -10%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  color: dimgray;
+}
