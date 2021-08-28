@@ -16,7 +16,7 @@ class CountdownTimer{
             const time = this.targetDate - currentTime;
             const timeComponents = this.getTimeComponents(time);
             this.onTick(timeComponents);
-            
+
             if (time < 0) {
             clearInterval(this.intervalId);
             document.querySelector(this.selector).innerHTML = "expired";
@@ -39,7 +39,7 @@ class CountdownTimer{
 const newCountDownTimer = new CountdownTimer({
   onTick: updateClockface,
   selector: '#timer-1',
-  targetDate: new Date('Sep 17, 2021'),
+  targetDate: new Date('Dec 17, 2021'),
 });
 
 document.addEventListener("DOMContentLoaded", newCountDownTimer.start.bind(newCountDownTimer));
