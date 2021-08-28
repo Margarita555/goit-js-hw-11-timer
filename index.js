@@ -16,10 +16,11 @@ class CountdownTimer{
             const time = this.targetDate - currentTime;
             const timeComponents = this.getTimeComponents(time);
             this.onTick(timeComponents);
+            
             if (time < 0) {
-    clearInterval(this.intervalId);
-    document.querySelector(this.selector).innerHTML = "EXPIRED";
-  }
+            clearInterval(this.intervalId);
+            document.querySelector(this.selector).innerHTML = "expired";
+            }
         },1000)
     }
    
