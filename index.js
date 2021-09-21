@@ -4,7 +4,7 @@ const minsFace = document.querySelector('span[data-value="mins"]');
 const secsFace = document.querySelector('span[data-value="secs"]');
 
 class CountdownTimer{
-    constructor({ onTick, targetDate,selector }) {
+    constructor({ onTick, targetDate, selector }) {
         this.targetDate = targetDate.getTime();
         this.intervalId = null;
         this.onTick = onTick;
